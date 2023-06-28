@@ -1,0 +1,11 @@
+def generate_series(a):
+    series = []
+    current_number = 1
+    while len(series) < a:
+        series.append(current_number)
+        current_number += 2
+    return series
+
+a = int(input())
+result = generate_series(a)
+print("Output:", result)
