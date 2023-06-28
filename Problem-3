@@ -1,0 +1,13 @@
+def generate_series(a):
+    output = []
+    num = 1
+    while len(output) < a:
+        output.append(num)
+        num += 2
+        if num % 2 == 0:
+            num -= 1
+    return output
+
+a = int(input("Enter a number: "))
+series = generate_series(a)
+print(series)
